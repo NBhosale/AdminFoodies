@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.foodies.nero.adminappfoodies.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextRecipeName"
+            android:hint="Enter Recipe Name"
+            android:textColorHint="#80140101" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextRecipeType"
+            android:hint="Type: Starter/Main Course/ Dessert" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextImageUrl"
+            android:hint="ImageUrl" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextRecipeOrigin"
+            android:hint="Origin Of Dish" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:inputType="textMultiLine"
+            android:layout_gravity="start"
+            android:ems="10"
+            android:id="@+id/editTextDescription"
+            android:hint="Description of dish like list of ingredients and how to make it" />
+
+        <Button
+            android:text="Save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonSave" />
+    </LinearLayout>
+</RelativeLayout>
